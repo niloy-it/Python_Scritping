@@ -39,8 +39,8 @@ import time
 ### 2. **Define the Switch List**
 ```python
 switches = [
-    {"ip": "192.168.102.250", "username": "root", "password": "WhqAcc*&^8u7y"},
-    {"ip": "192.168.102.6", "username": "root", "password": "WhqAcc*&^8u7y"}
+    {"ip": "192.168.1.2", "username": "ad***", "password": "*******"},
+    {"ip": "192.168.1.3", "username": "ad***", "password": "*******"}
 ]
 ```
 - Each switch is represented as a dictionary containing its IP, username, and password.  
@@ -48,7 +48,7 @@ switches = [
 
 ### 3. **Set TFTP Server and Backup Filename Format**
 ```python
-tftp_server = "172.16.6.180"
+tftp_server = "172.16.16.200"
 backup_filename = "backup_{ip}.cfg"
 ```
 - `tftp_server`: Your local PC's IP address where the TFTP service is running.  
@@ -134,17 +134,17 @@ ping 172.16.6.180
 
 3. Manual command (for testing):
 ```shell
-copy startup-config tftp://172.16.6.180/backup_test.cfg
+copy startup-config tftp://172.16.16.200/backup_test.cfg
 ```
 
 ---
 
 ## 📁 Sample Output
 ```bash
-Connecting to 192.168.102.250...
-Backup completed for 192.168.102.250
-Connecting to 192.168.102.6...
-Backup completed for 192.168.102.6
+Connecting to 192.168.1.2...
+Backup completed for 192.168.1.2
+Connecting to 192.168.1.3...
+Backup completed for 192.168.1.3
 ```
 
 ---
