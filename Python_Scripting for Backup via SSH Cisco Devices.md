@@ -163,10 +163,6 @@ python main.py
 ## ❤️ Author
 
 **Niloy Saha**  
-Network & System Administrator
 
 ---
 
-## 🎓 License
-
-This project is for educational and internal use only.
